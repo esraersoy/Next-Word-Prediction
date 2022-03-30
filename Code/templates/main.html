@@ -16,10 +16,45 @@
           font-size: 35px;
           color: white;
         }
+        #mainMenu {
+          list-style: none;
+          overflow:hidden;
+          margin:0;
+          padding:0;
+        }
+
+        #mainMenu li {
+          float:left;
+          background:orange;
+          text-align: left;
+          font-size: 15px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        
+        #mainMenu li a {
+          text-align:center;
+          padding:10px;
+          width:80px;
+        }
+        
+        a {
+          display:block;
+        } 
+        
     </style>
 </head>
 <header>
     <h2>Welcome {{username}}!</h2>
+    <div class="container">
+        <nav>
+    		<ul id="mainMenu">
+    			<li><a href="/">Login</a></li>
+    			<li><a href="/user_history">User History</a></li>
+    			<li><a href="/">Logout</a></li>
+    		</ul>
+    	</nav>
+	</div> 
 </header>
 
 <body>
